@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Payment\Model\MethodList">
+        <plugin name="sample_payatstore_restrict_pay_at_store_payment"
+                sortOrder="10"
+                type="Sample\PayAtStore\Plugin\Magento\Payment\Model\RestrictPayAtStore" />
+    </type>
+</config>
